@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!-- linea para que cargue iconos en botones -->
     <script>
     console.log("saoko papi saoko");
+
+    function colorTitulo(){
+      console.log("Pulso el boton generation");
+      document.getElementById("generation").style.color = "blue";
+    }
+
+
     </script>
 <body>
     <!-- Navbar -->
@@ -55,9 +62,13 @@
         <!-- Descripción Generation -->
         <div class="row">
             <div>
-                <h1>Estar en Generation</h1>
-                <p>Estar en generation es buscar muchos outfits los viernes</p>
-                <p> <a href="https://mexico.generation.org/" target="_blank" class="btn btn-success">Visita Generation</p></a>
+                <h1>Estar en <span id="generation"> Generation</span> es ...</h1>
+                <p>
+                  Estar en generation es buscar muchos outfits los viernes
+                </p>
+                <p onclick="colorTitulo()">
+                  <a href="https://mexico.generation.org/" target="_blank" class="btn btn-success">Visita Generation</a>
+                </p>
             </div>
         </div>
         <!-- Descripción HTML, CSS, JS -->
